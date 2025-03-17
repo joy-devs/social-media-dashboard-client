@@ -104,14 +104,7 @@ const LandingPage: React.FC = () => {
         <button className="btn btn-accent btn-lg mt-6">Get Started Now</button>
       </section>
 
-      {/* Footer */}
-      <footer className="footer p-6 bg-base-200 text-base-content text-center">
-        <p>© {new Date().getFullYear()} SocialX - All rights reserved.</p>
-        <div className="space-x-4">
-          <a href="#" className="link link-primary">Privacy Policy</a>
-          <a href="#" className="link link-primary">Terms of Service</a>
-        </div>
-      </footer>
+      
     </div>
   );
 };
