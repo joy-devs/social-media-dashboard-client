@@ -1,15 +1,49 @@
 import React from "react";
+import { FaFacebook, FaYoutube, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const LandingPage: React.FC = () => {
   return (
     <div className="bg-base-100 min-h-screen">
+      
+
       {/* Hero Section */}
-      <section className="hero min-h-[80vh] bg-gradient-to-r from-primary to-secondary text-white flex flex-col items-center justify-center text-center px-6">
-        <h1 className="text-5xl font-bold">Connect, Share, Engage</h1>
-        <p className="py-4 text-lg max-w-2xl">
-          Join the fastest-growing social media platform and stay connected with your friends and community.
-        </p>
-        <button className="btn btn-accent btn-lg mt-4">Get Started</button>
+      <section className="hero min-h-[80vh] bg-gradient-to-r from-primary to-secondary text-white">
+        <div className="hero-content text-center">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl font-bold">Manage Your Social Media Like a Pro!</h1>
+            <p className="py-4 text-lg">
+              Track, analyze, and optimize your presence across <span className="font-bold">Facebook, YouTube, Instagram, and X</span>.
+            </p>
+            <button className="btn btn-accent btn-lg mt-4">Start Tracking Now</button>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Media Platforms Section */}
+      <section className="container mx-auto px-6 py-16 text-center">
+        <h2 className="text-3xl font-bold text-primary">One Dashboard. Four Platforms.</h2>
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-10">
+          <div className="card bg-base-200 shadow-lg p-6 flex flex-col items-center">
+            <FaFacebook className="text-blue-600 text-5xl mb-3" />
+            <h3 className="text-xl font-semibold">Facebook</h3>
+            <p>Monitor page performance, engagement, and ad insights.</p>
+          </div>
+          <div className="card bg-base-200 shadow-lg p-6 flex flex-col items-center">
+            <FaYoutube className="text-red-600 text-5xl mb-3" />
+            <h3 className="text-xl font-semibold">YouTube</h3>
+            <p>Track video views, subscriber growth, and watch time.</p>
+          </div>
+          <div className="card bg-base-200 shadow-lg p-6 flex flex-col items-center">
+            <FaInstagram className="text-pink-600 text-5xl mb-3" />
+            <h3 className="text-xl font-semibold">Instagram</h3>
+            <p>Analyze post reach, story views, and audience engagement.</p>
+          </div>
+          <div className="card bg-base-200 shadow-lg p-6 flex flex-col items-center">
+            <FaTwitter className="text-blue-400 text-5xl mb-3" />
+            <h3 className="text-xl font-semibold">X (Twitter)</h3>
+            <p>Monitor tweet interactions, trends, and follower growth.</p>
+          </div>
+        </div>
       </section>
 
       {/* Features Section */}
@@ -17,35 +51,35 @@ const LandingPage: React.FC = () => {
         <h2 className="text-3xl font-bold text-center text-primary">Why Choose SocialX?</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
           <div className="card bg-base-200 shadow-lg p-6">
-            <h3 className="text-xl font-semibold">🔗 Seamless Connectivity</h3>
-            <p>Stay connected with your friends and loved ones anytime, anywhere.</p>
+            <h3 className="text-xl font-semibold">📊 Advanced Analytics</h3>
+            <p>Get deep insights into engagement, audience growth, and post performance.</p>
           </div>
           <div className="card bg-base-200 shadow-lg p-6">
-            <h3 className="text-xl font-semibold">📰 Personalized Feed</h3>
-            <p>Get content tailored to your interests and engage with trending topics.</p>
+            <h3 className="text-xl font-semibold">🔥 Trending Content Tracker</h3>
+            <p>Discover top-performing content and optimize your strategy.</p>
           </div>
           <div className="card bg-base-200 shadow-lg p-6">
-            <h3 className="text-xl font-semibold">🔒 Secure & Private</h3>
-            <p>Your data is safe with our end-to-end encryption and privacy controls.</p>
+            <h3 className="text-xl font-semibold">📅 Scheduling & Automation</h3>
+            <p>Plan posts ahead of time and keep your audience engaged effortlessly.</p>
           </div>
         </div>
       </section>
 
-      {/* Animated Stats Section */}
-      <section className="bg-secondary py-16 text-white text-center">
-        <h2 className="text-3xl font-bold">Our Growing Community</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-8">
-          <div>
-            <h3 className="text-5xl font-bold">1M+</h3>
-            <p className="text-lg">Active Users</p>
+      {/* Stats Section */}
+      <section className="container mx-auto px-6 py-16 text-center bg-base-200 rounded-lg shadow-md">
+        <h2 className="text-3xl font-bold text-primary">Join Our Growing Community</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <div className="stat">
+            <div className="stat-value text-primary text-4xl">10M+</div>
+            <div className="stat-title">Posts Tracked</div>
           </div>
-          <div>
-            <h3 className="text-5xl font-bold">500K+</h3>
-            <p className="text-lg">Daily Posts</p>
+          <div className="stat">
+            <div className="stat-value text-primary text-4xl">5M+</div>
+            <div className="stat-title">Engagement Reports</div>
           </div>
-          <div>
-            <h3 className="text-5xl font-bold">99.9%</h3>
-            <p className="text-lg">Server Uptime</p>
+          <div className="stat">
+            <div className="stat-value text-primary text-4xl">99%</div>
+            <div className="stat-title">Accurate Insights</div>
           </div>
         </div>
       </section>
@@ -53,27 +87,21 @@ const LandingPage: React.FC = () => {
       {/* Testimonials Section */}
       <section className="container mx-auto px-6 py-16">
         <h2 className="text-3xl font-bold text-center text-primary">What Our Users Say</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
-          <div className="card bg-base-200 shadow-lg p-6">
-            <p className="text-lg italic">"SocialX changed the way I connect with my friends!"</p>
-            <p className="mt-4 font-bold">- Alex Johnson</p>
-          </div>
-          <div className="card bg-base-200 shadow-lg p-6">
-            <p className="text-lg italic">"I love the security and privacy controls on this platform."</p>
-            <p className="mt-4 font-bold">- Sarah Lee</p>
-          </div>
-          <div className="card bg-base-200 shadow-lg p-6">
-            <p className="text-lg italic">"A fantastic platform with amazing features!"</p>
-            <p className="mt-4 font-bold">- Daniel Brown</p>
+        <div className="carousel w-full mt-10">
+          <div className="carousel-item w-full flex justify-center">
+            <div className="card bg-base-200 shadow-lg p-6 w-96">
+              <p className="text-lg">"SocialX has transformed how I manage my social media. The analytics are spot on!"</p>
+              <h4 className="text-primary font-semibold mt-2">- Jane Doe, Social Influencer</h4>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Call-to-Action Section */}
-      <section className="bg-primary text-white py-16 text-center">
-        <h2 className="text-4xl font-bold">Ready to Join?</h2>
-        <p className="text-lg mt-4">Create an account now and start sharing your moments!</p>
-        <button className="btn btn-accent btn-lg mt-6">Sign Up Now</button>
+      {/* Call to Action */}
+      <section className="text-center py-16 bg-gradient-to-r from-secondary to-primary text-white">
+        <h2 className="text-3xl font-bold">Ready to Take Your Social Media to the Next Level?</h2>
+        <p className="mt-4 text-lg">Start tracking your growth and engagement today!</p>
+        <button className="btn btn-accent btn-lg mt-6">Get Started Now</button>
       </section>
 
       {/* Footer */}
@@ -82,7 +110,6 @@ const LandingPage: React.FC = () => {
         <div className="space-x-4">
           <a href="#" className="link link-primary">Privacy Policy</a>
           <a href="#" className="link link-primary">Terms of Service</a>
-          <a href="#" className="link link-primary">Contact Us</a>
         </div>
       </footer>
     </div>
